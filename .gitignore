@@ -1,0 +1,9 @@
+bin
+obj
+*.suo
+*.user
+_LogData
+output
+[Tt]humbs.db
+packages
+TestResults
