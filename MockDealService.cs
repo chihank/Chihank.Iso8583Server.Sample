@@ -43,7 +43,7 @@ namespace Chihank.Iso8583Server.Sample
             Console.WriteLine(String.Format("terminalId: {0}", request.TerminalId));
 
             TransportationResponse rsp = new TransportationResponse();
-            rsp.ResponseCode = ResponseCode.BadAccount;
+            rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000001";
             rsp.Amount = 1;
             return rsp;
