@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+buildscript{
+    repositories {
+        maven { url "http://repo.chihank.com/nexus/content/repositories/releases/" }
+        mavenCentral()
+        mavenLocal()
+    }
+}
+
+sourceCompatibility = 1.6
+version = '1.0'
+
+mainClassName = "com.chihank.sample.App"
+
+repositories {
+    maven { url "http://repo.chihank.com/nexus/content/repositories/releases/" }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile('com.chihank:iso8583server:1.2')
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+task wrapper(type: Wrapper) {
+}
