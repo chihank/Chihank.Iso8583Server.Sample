@@ -1,3 +1,6 @@
+.classpath
+.project
+.settings
 *.iws
 *.ipr
 *.iml
@@ -5,3 +8,4 @@
 .gradle
 .out
 build
+/bin/
