@@ -9,6 +9,7 @@ import java.io.IOException;
 class App {
     public static void main(String[] args) throws IOException {
         Iso8583Server server = new Iso8583Server(new MockDealService());
+        server.setPort(3130);
         server.start();
         System.in.read();
         server.stop();
@@ -23,6 +24,7 @@ class MockDealService implements DealService {
         Terminal terminal = new Terminal();
         terminal.setTenantId(tenantId);
         terminal.setTerminalId(terminalId);
+        terminal.setEncryptKey("3131313131313131");
         return terminal;
     }
 
@@ -32,7 +34,6 @@ class MockDealService implements DealService {
 
         Tenant tenant = new Tenant();
         tenant.setTenantId(tenantId);
-        tenant.setEncryptKey("3131313131313131");
         return tenant;
     }
 

@@ -4,4 +4,5 @@
 *.swp
 .gradle
 .out
+out
 build
