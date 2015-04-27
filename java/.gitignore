@@ -1,3 +1,6 @@
+.classpath
+.project
+.settings
 *.iws
 *.ipr
 *.iml
@@ -6,3 +9,4 @@
 .out
 out
 build
+/bin/
