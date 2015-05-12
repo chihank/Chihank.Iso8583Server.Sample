@@ -2,6 +2,9 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "com.chihank.sample.App"
 
 buildscript{
     repositories {

@@ -24,7 +24,7 @@ class MockDealService implements DealService {
         Terminal terminal = new Terminal();
         terminal.setTenantId(tenantId);
         terminal.setTerminalId(terminalId);
-        terminal.setEncryptKey("3131313131313131");
+        terminal.setEncryptKey("1234567890123456");
         return terminal;
     }
 
