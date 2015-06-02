@@ -15,7 +15,7 @@ namespace Chihank.Iso8583Server.Sample
             {
                 TenantId = tenantId,
                 TerminalId = terminalId,
-                EncryptKey = "3131313131313131"
+                EncryptKey = "1234567890123456"
             };
             return terminal;
         }
@@ -45,7 +45,9 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000001";
-            rsp.Amount = 1;
+            rsp.AccountAmount = 1;
+            rsp.RewardAmount = 20;
+            rsp.TradeAmount= 30;
             return rsp;
         }
 
@@ -64,7 +66,7 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000005";
-            rsp.Amount = 5;
+            rsp.AccountAmount = 5;
             return rsp;
         }
 
@@ -75,7 +77,7 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000002";
-            rsp.Amount = 2;
+            rsp.AccountAmount = 2;
             return rsp;
         }
 
@@ -87,7 +89,7 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000007";
-            rsp.Amount = 7;
+            rsp.AccountAmount = 7;
             return rsp;
         }
         public TransportationResponse CancelPayment(IDealRequest request)
@@ -105,7 +107,7 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000003";
-            rsp.Amount = 3;
+            rsp.AccountAmount = 3;
             return rsp;
         }
 
@@ -119,7 +121,7 @@ namespace Chihank.Iso8583Server.Sample
             TransportationResponse rsp = new TransportationResponse();
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000004";
-            rsp.Amount = 4;
+            rsp.AccountAmount = 4;
             return rsp;
         }
     }

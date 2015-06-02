@@ -8,7 +8,7 @@ namespace Chihank.Iso8583Server.Sample
         static void Main(string[] args)
         {
             // 监听端口 3130
-            var service = new Iso8583Service(3130, new MockDealService());
+            var service = new Iso8583Service(3131, new MockDealService());
             // 记日志
             service.Logger = new ConsoleLogger();
             // 设置空闲断开链接时间

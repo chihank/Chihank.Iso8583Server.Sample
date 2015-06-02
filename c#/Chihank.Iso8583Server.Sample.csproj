@@ -35,8 +35,8 @@
     <Reference Include="Autofac">
       <HintPath>packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Chihank.Iso8583Server">
-      <HintPath>packages\Chihank.Iso8583Server.0.3.4.0\lib\net40\Chihank.Iso8583Server.dll</HintPath>
+    <Reference Include="Chihank.Iso8583Server, Version=0.3.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Chihank.Iso8583Server.0.3.5.0\lib\net40\Chihank.Iso8583Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -62,9 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MockDealService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Chihank.Iso8583Server.readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
