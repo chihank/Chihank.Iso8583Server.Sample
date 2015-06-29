@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using Chihank.Iso8583Server.Requests;
 
 namespace Chihank.Iso8583Server.Sample
@@ -46,8 +47,9 @@ namespace Chihank.Iso8583Server.Sample
             rsp.ResponseCode = ResponseCode.Success;
             rsp.ReferenceNo = "000000000001";
             rsp.AccountAmount = 1;
-            rsp.RewardAmount = 20;
-            rsp.TradeAmount= 30;
+            rsp.InfoTip = "本次返现金额共 10 元，返现比利(20%)";
+//            rsp.InfoTip = "hello world";
+            rsp.TradeAmount = 30;
             return rsp;
         }
 
