@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using Chihank.Iso8583;
+using Chihank.Iso8583Server.Requests;
 using Chihank.Iso8583Server.Responses;
 using Chihank.Network;
 
@@ -32,7 +33,7 @@ namespace Chihank.Iso8583Server.Sample
     {
         #region Implementation of ITracker
 
-        public void Track(ResponseBase res, TradeType tradeType)
+        public void Track(RequestBase request, ResponseBase response, TradeType tradeType)
         {
             Console.WriteLine("Track: " + tradeType.ToString());
         }
